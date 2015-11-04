@@ -1,0 +1,18 @@
+CREATE TABLE waifu(
+idwaifu INT PRIMARY KEY,
+nome varchar(50),
+anime varchar(50),
+nivelDeAmor varchar (10) ,
+dono varchar(50)
+);
+
+delete from waifu where idwaifu=2;
+update waifu set nivelDeAmor='666' where idwaifu=3; 
+
+INSERT INTO WAIFU (nome, anime, nivelDeAmor, dono) VALUES ('Tsunade', 'Naruto', '7', 'Taradão');
+insert into waifu (nome, anime, nivelDeAmor, dono) values  ('Rei', 'Evangelion', '10/10', 'Pai do Shinji');
+insert into waifu (nome, anime, nivelDeAmor, dono) values  ('Asuka', 'Evangelion', '1,2', 'Namorado do Shinji');
+insert into waifu (nome, anime, nivelDeAmor, dono) values  ('Glyphth', 'Berserk' , '100/100', 'Guts');
+
+truncate table waifu;
+select * from Waifu;
